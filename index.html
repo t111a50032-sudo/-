@@ -1,0 +1,184 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1">
+	<title>小小珍奶師 | Little Boba Master</title>
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+	<header class="site-header">
+		<div class="container header-inner">
+			<a class="brand" href="#hero">小小珍奶師</a>
+			<button class="nav-toggle" id="navToggle" aria-label="開啟選單">☰</button>
+			<nav class="nav" id="nav">
+				<a href="#hero">首頁</a>
+				<a href="#story">故事</a>
+				<a href="#background">文化背景</a>
+				<a href="#features">特色</a>
+				<a href="#interactive">互動</a>
+				<a href="#scenarios">情境</a>
+				<a href="#details">細節</a>
+				<a href="#contact">聯絡</a>
+			</nav>
+		</div>
+	</header>
+
+	<main>
+		<section id="hero" class="hero">
+			<div class="container hero-inner">
+				<div class="hero-copy">
+					<h1>手作台灣味，珍奶自己配</h1>
+					<p class="lead">用雙手捏出屬於你的台式職人浪漫 — 親子DIY療癒食玩。</p>
+					<a class="btn" href="#story">了解故事</a>
+					<a class="btn secondary" href="#interactive">立即互動</a>
+				</div>
+				<div class="hero-media">
+					<img src="img/1.jpg" alt="小小珍奶師產品照">
+				</div>
+			</div>
+		</section>
+
+		<section id="story" class="section">
+			<div class="container">
+				<h2>文化故事</h2>
+				<p>一杯風靡全球的黑色珍珠，寫著台灣人一甲子的款待熱情。在台灣的街頭巷尾，手搖飲不僅是一杯飲料，更是一種相聚的儀式。喧囂的夜市裡、磚紅色的復古攤位前，老闆用純熟的手藝搖動著茶湯，加入Q彈的黑糖珍珠，傳遞出濃濃的台灣人情味。我們希望透過親手搓揉珍珠的過程，把台灣獨特的飲食文化與職人精神，變成代代相傳的快樂記憶。</p>
+			</div>
+		</section>
+
+		<section id="background" class="section alt">
+			<div class="container">
+				<h2>文化背景</h2>
+				<p>將台灣夜市與手搖飲文化做為親子體驗的橋樑，從材料到包裝都蘊含在地記憶：黑糖珍珠、濃郁奶茶、以及可折成攤位的包裝盒，讓體驗不止於一杯飲料，而是整個場景與職人精神的傳遞。</p>
+			</div>
+		</section>
+
+		<section id="features" class="section">
+			<div class="container">
+				<h2>三大產品特色</h2>
+				<div class="features-grid">
+					<div class="feature reveal-item">
+						<h3>職人感手作</h3>
+						<p>孩子親手揉捏黑糖珍珠，訓練精細動作並體驗傳統工藝。</p>
+						<button type="button" class="feature-toggle" aria-expanded="false">展開更多</button>
+						<div class="feature-detail" hidden>搭配圖文步驟書，更容易讓孩子理解製作流程，讓親子共同完成手作時光。</div>
+					</div>
+					<div class="feature reveal-item">
+						<h3>環保零廢棄</h3>
+						<p>外盒可折疊成復古手搖飲攤，兼具玩樂與環保。</p>
+						<button type="button" class="feature-toggle" aria-expanded="false">展開更多</button>
+						<div class="feature-detail" hidden>包裝設計可重複使用，不僅省資源，也讓孩子玩得更有故事性。</div>
+					</div>
+					<div class="feature reveal-item">
+						<h3>高規食安</h3>
+						<p>減糖配方、無人工色素，原料通過食品安全檢驗。</p>
+						<button type="button" class="feature-toggle" aria-expanded="false">展開更多</button>
+						<div class="feature-detail" hidden>每份材料皆附安心說明，讓家長與孩子都能安心享受DIY體驗。</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section id="interactive" class="section alt">
+			<div class="container">
+				<h2>體驗互動組合</h2>
+				<p>選擇珍珠口味、奶茶甜度與包裝風格，馬上看到你的專屬DIY方案。</p>
+				<div class="build-box">
+					<div class="build-grid">
+						<label>
+							<span>珍珠口味</span>
+							<select id="pearlFlavor">
+								<option value="黑糖">黑糖</option>
+								<option value="原味">原味</option>
+								<option value="蜂蜜">蜂蜜</option>
+							</select>
+						</label>
+						<label>
+							<span>奶茶甜度</span>
+							<select id="teaSweetness">
+								<option value="微糖">微糖</option>
+								<option value="正常">正常</option>
+								<option value="無糖">無糖</option>
+							</select>
+						</label>
+						<label>
+							<span>外盒風格</span>
+							<select id="packStyle">
+								<option value="夜市攤">夜市攤</option>
+								<option value="復古紙盒">復古紙盒</option>
+								<option value="職人店招">職人店招</option>
+							</select>
+						</label>
+					</div>
+					<div class="build-actions">
+						<button id="buildBtn" class="btn">生成你的專屬組合</button>
+						<button id="factBtn" class="btn secondary">文化小知識</button>
+					</div>
+					<div id="buildResult" class="build-result" aria-live="polite">
+						<p>選擇組合後，這裡會顯示你的專屬珍奶方案。</p>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section id="scenarios" class="section alt">
+			<div class="container">
+				<h2>使用情境</h2>
+				<ul class="scenarios">
+				<li class="reveal-item">週末親子同樂：在家揉珍珠、泡奶茶，共度療癒時光。</li>
+				<li class="reveal-item">外國友人的文化體驗：透過DIY認識台灣庶民文化。</li>
+				<li class="reveal-item">兒童派對的角色扮演：擺攤遊戲建立自信與社交能力。</li>
+				</ul>
+			</div>
+		</section>
+
+		<section id="details" class="section">
+			<div class="container">
+				<h2>產品規格與細節</h2>
+				<table class="details-table">
+					<tr><th>產品內含</th><td>麵粉黑糖調味粉、奶茶調理粉、迷你飲料杯、安全量匙、攪拌棒、多功能外盒與圖文步驟書</td></tr>
+					<tr><th>適用年齡</th><td>5 歲以上（5–8 歲建議家長陪同）</td></tr>
+					<tr><th>產地/成份</th><td>100% 台灣製造 / 減糖、無人工色素</td></tr>
+					<tr><th>包裝材質</th><td>防潮鋁箔、PP/PET 可回收塑料、白卡紙印刷</td></tr>
+				</table>
+			</div>
+		</section>
+
+		<section id="gallery" class="section alt">
+			<div class="container">
+				<h2>產品預覽</h2>
+				<div class="gallery" id="gallery">
+					  <img src="img/1.jpg" alt="預覽1" data-index="0">
+					  <img src="img/2.jpg" alt="預覽2" data-index="1">
+					  <img src="img/3.jpg" alt="預覽3" data-index="2">
+				</div>
+			</div>
+		</section>
+
+		<section id="contact" class="section">
+			<div class="container contact-inner">
+				<h2>聯絡我們</h2>
+				<p>想將台灣味帶進您的生活嗎？合作、採購或課程邀約，歡迎與我們聯絡。</p>
+				<ul class="contact-list">
+					<li>電子信箱：service@littlebobamaster.com</li>
+					<li>服務專線：+886-2-XXXX-XXXX</li>
+					<li>品牌據點：台北市大同區文創園區 B 棟</li>
+				</ul>
+			</div>
+		</section>
+
+	</main>
+
+	<button id="backToTop" class="back-to-top" aria-label="回到最上方">↑</button>
+
+	<div id="lightbox" class="lightbox" aria-hidden="true">
+		<button class="lb-close" id="lbClose">✕</button>
+		<img id="lbImage" src="" alt="預覽放大">
+		<button class="lb-prev" id="lbPrev">‹</button>
+		<button class="lb-next" id="lbNext">›</button>
+	</div>
+
+	<script src="script.js"></script>
+</body>
+</html>
+
